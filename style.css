@@ -80,6 +80,11 @@
 }
 
 .contact{
-    font-size: xx-large;
+    font-size: large;
     position: relative;
+}
+
+.card-img-top{
+    height: 400px;
+    width: 400px;;
 }

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <title> Product: Spaceship </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="star-field">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark nav_bg">
+            <a class="navbar-brand main_text" href="#">Zoomies</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../aarushi/main_page.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../browse/browse.html">Browse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../fun_info/fun_info.html">Fun info</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="../aboutus/aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                            onclick="document.getElementsByClassName('dropdown-menu')[0].style.display='block'"
+                            id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Register
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../login/login_client.html">Customer</a>
+                            <a class="dropdown-item" href="../login/login.html">Vendor</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <div class="listing blur">
+        <div class="first">
+            <div class="cover">
+                <img src="../browse/rocket.png">
+            </div>
+            <div class="desc hidden">
+                <div class="info" style="text-align: center;">Description</div>
+                <div class="info">Intergalactic Travel Vehicle, powered by liquid hydrogen, suitable for people with lisence V3</div>
+            </div>
+            <div class="main-info hidden">
+                <div class="info">Product Name: Conestoga II</div>
+                <div class="info">Origin Planet: P005 (Earth)</div>
+                <div class="info">Price: 𐊾 100000000 </div>
+                <div class="info">Location detect (EARTH): Equivalent price is $36000</div>
+                <div class="info">ETA: 2h <br>(The spaceship is this expensive because space travel was successfully monopolized)</div>
+                <div id="quantity" style="display: flex;" class="info">Quantity:<button onclick="decrease()" id="left"
+                        class="quantity">-</button>0<button onclick="increase()" id="right" class="quantity">+</button>
+                </div>
+                <div class="info center"><button class="buy">Buy now</button></div>
+            </div>
+        </div>
+        <div style="width: 90%; height: 100%;" class="second">
+            <div class="info" style="text-align: center;display: block;">What others thought of this product</div>
+            <br>
+            <div style="display: flex; height: 10%;">
+                <div class="container">
+                    <div class="container__items">
+                        <input type="radio" name="stars" id="st5">
+                        <label for="st5">
+                            <div class="star-stroke">
+                                <div class="star-fill"></div>
+                            </div>
+                        </label>
+                        <input type="radio" name="stars" id="st4">
+                        <label for="st4">
+                            <div class="star-stroke">
+                                <div class="star-fill"></div>
+                            </div>
+                        </label>
+                        <input type="radio" name="stars" id="st3">
+                        <label for="st3">
+                            <div class="star-stroke">
+                                <div class="star-fill"></div>
+                            </div>
+                        </label>
+                        <input type="radio" name="stars" id="st2">
+                        <label for="st2">
+                            <div class="star-stroke">
+                                <div class="star-fill"></div>
+                            </div>
+                        </label>
+                        <input type="radio" name="stars" id="st1">
+                        <label for="st1">
+                            <div class="star-stroke">
+                                <div class="star-fill"></div>
+                            </div>
+
+                        </label>
+                    </div>
+                </div>
+            </div>
+                <div class="info text"> This product has not been reviewed yet
+                </div>
+        </div>
+        <div style="width: 90%; height: 100%;" class="third">
+            <div class="info" style="text-align: center;">Products you may like...</div>
+            <div class="contain">
+                <div class="product" style="text-align: center;" onclick='window.open("../product/spacesuit_product.html")'>
+                    <div class="info">Spacesuit</div>
+                    <div class="tinyimage"><img class="image" src="../browse/spacesuit.png "></div>
+                    <div class="info">Space Essential Suit</div>
+                    <div class="info"> 𐊾 76000</div>
+                </div>
+                <div class="product" style="text-align: center;" onclick='window.open("../product/puffer_extreme_product.html")'>
+                    <div class="info">Puffer Extreme Outfit</div>
+                    <div class="tinyimage"><img class="image" src="../browse/futuristic_dress.png "></div>
+                    <div class="info"> Stylish Red Coat</div>
+                    <div class="info"> 𐊾 990000</div>
+                </div>
+                <div class="product" style="text-align: center;" onclick='window.open("../product/honey_cereal_product.html")'>
+                    <div class="info">Honey Stars</div>
+                    <div class="tinyimage"><img class="image" src="../browse/cereal.png " ></div>
+                    <div class="info">Honey-coated cereal</div>
+                    <div class="info"> 𐊾 1750</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="line"></div>
+        <div class="circle" onclick="zoom()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+            </svg>
+        </div>
+
+        <div class="circle" id="second" onclick="down()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left" id="arrow"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+        </div>
+
+        <div class="circle" id="third" onclick="up()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-left" id="arrow"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+            </svg>
+        </div>
+    </div>
+    <!-- 
+            <div class="subsection">
+                <div class="main_text">Zoomies</div>
+            </div> -->
+    <!-- Bootstrap JS (optional, for dropdowns, toggles, etc.) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        var toggle = false;
+        var midtoggle = false;
+
+        var level = 0;
+        var toggle2 = false;
+
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        async function zoom() {
+            if (midtoggle)
+                return;
+            if (toggle2)
+                return;
+            midtoggle = true;
+            if (!toggle) {
+                for (element of document.getElementsByClassName('hidden')) {
+                    element.style.opacity = '0%';
+                }
+                await sleep(500);
+                document.getElementsByClassName('cover')[0].style.width = '82%';
+                document.getElementsByClassName('cover')[0].style.height = '90%';
+                document.getElementsByTagName('img')[0].style.width = '48vw';
+                document.getElementsByTagName('img')[0].style.height = '35vw';
+                toggle = true;
+            }
+            else {
+                document.getElementsByClassName('cover')[0].style.width = '38%';
+                document.getElementsByClassName('cover')[0].style.height = '53%';
+                document.getElementsByTagName('img')[0].style.width = '23vw';
+                document.getElementsByTagName('img')[0].style.height = '20vw';
+                await sleep(500);
+                for (element of document.getElementsByClassName('hidden')) {
+                    element.style.opacity = '100%';
+                }
+                toggle = false;
+            }
+
+            midtoggle = false;
+        }
+
+        function increase() {
+            var text = document.getElementById('quantity').textContent
+            var start = text.indexOf('-');
+            var end = text.indexOf('+');
+            var toChange = text.slice(start + 1, end)
+
+            if (parseInt(toChange) < 9) {
+                var sub = parseInt(toChange) + 1;
+                document.getElementById('quantity').innerHTML = 'Quantity:<button onclick="decrease()" id="left" class="quantity">-</button>' + String(sub) + '<button onclick="increase()" id="right" class="quantity">+</button>';
+            }
+        }
+        function decrease() {
+            var text = document.getElementById('quantity').textContent
+            var start = text.indexOf('-');
+            var end = text.indexOf('+');
+            var toChange = text.slice(start + 1, end)
+
+            if (parseInt(toChange) > 0) {
+                var sub = parseInt(toChange) - 1;
+                document.getElementById('quantity').innerHTML = 'Quantity:<button onclick="decrease()" id="left" class="quantity">-</button>' + String(sub) + '<button onclick="increase()" id="right" class="quantity">+</button>';
+            }
+        }
+
+        async function down() {
+            if (level >= 2) {
+                return;
+            }
+            if (midtoggle)
+                return;
+            midtoggle = true;
+            level++;
+            if (level == 1) {
+                document.getElementsByClassName('bi-plus')[0].style.opacity = '0%';
+                document.getElementsByClassName('first')[0].style.opacity = '0%';
+                document.getElementsByClassName('second')[0].style.display = 'block';
+                await sleep(500);
+                document.getElementsByClassName('second')[0].style.opacity = '100%';
+                document.getElementsByClassName('first')[0].style.display = 'none';
+                await sleep(500);
+            }
+            else if (level == 2) {
+                document.getElementsByClassName('second')[0].style.opacity = '0%';
+                document.getElementsByClassName('third')[0].style.display = 'block';
+                await sleep(500);
+                document.getElementsByClassName('third')[0].style.opacity = '100%';
+                document.getElementsByClassName('second')[0].style.display = 'none';
+                await sleep(500);
+            }
+            midtoggle = false;
+        }
+
+        async function up() {
+            if (level < 0) {
+                return;
+            }
+            if (midtoggle)
+                return;
+            midtoggle = true;
+            level--;
+            if (level == 0) {
+                document.getElementsByClassName('bi-plus')[0].style.opacity = '100%';
+                document.getElementsByClassName('second')[0].style.opacity = '0%';
+                await sleep(500);
+                document.getElementsByClassName('second')[0].style.display = 'none';
+                document.getElementsByClassName('first')[0].style.display = 'block';
+                await sleep(10);
+                document.getElementsByClassName('first')[0].style.opacity = '100%';
+                await sleep(500);
+                
+            }
+            else if (level == 1) {
+                document.getElementsByClassName('third')[0].style.opacity = '0%';
+                await sleep(500);
+                document.getElementsByClassName('third')[0].style.display = 'none';
+                document.getElementsByClassName('second')[0].style.display = 'block';
+                await sleep(10);
+                document.getElementsByClassName('second')[0].style.opacity = '100%';
+                await sleep(500);
+            }
+            midtoggle = false;
+        }
+
+        // async function newpage(){
+        //     if (midtoggle)
+        //         return;
+        //     midtoggle = true;
+        //     if(!toggle2){
+        //         document.getElementsByClassName('bi-arrow-left')[0].style.transform = 'rotate(180deg)';
+        //         document.getElementsByClassName('bi-plus')[0].style.opacity = '0%';
+        //         for(element of document.getElementsByClassName('hidden')){
+        //             element.style.transitionDuration = '0s';
+        //             element.style.opacity = '0%';
+        //         }
+
+        //         await sleep(200);
+
+        //         for(element of document.getElementsByClassName('hidden')){
+        //             element.style.opacity = '100%';
+        //         }
+
+        //         await sleep(200);
+
+        //         for(element of document.getElementsByClassName('hidden')){
+        //             element.style.transitionDuration = '0s';
+        //             element.style.opacity = '0%';
+        //         }
+
+        //         await sleep(200);
+
+        //         for(element of document.getElementsByClassName('hidden')){
+        //             element.style.opacity = '100%';
+        //         }
+
+        //         await sleep(200);
+        //         for(element of document.getElementsByClassName('hidden')){
+        //             element.style.transitionDuration = '0.5s';
+        //             element.style.opacity = '0%';
+        //         }
+        //         document.getElementsByClassName('cover')[0].style.opacity = '0%';
+        //         document.getElementsByClassName('second')[0].style.display = 'block';
+        //         await sleep(800);
+        //         document.getElementsByClassName('second')[0].style.opacity = '100%';
+        //         toggle2 = true;
+        //     }
+        //     else{
+        //         document.getElementsByClassName('bi-arrow-left')[0].style.transform = 'rotate(-0deg)';
+        //         document.getElementsByClassName('bi-plus')[0].style.opacity = '100%';
+        //         document.getElementsByClassName('second')[0].style.opacity = '0%';
+        //         await sleep(500);
+        //         document.getElementsByClassName('second')[0].style.display = 'none';
+
+        //         for(element of document.getElementsByClassName('hidden')){
+        //             element.style.opacity = '100%';
+        //         }
+        //         document.getElementsByClassName('cover')[0].style.opacity = '100%';
+
+        //         toggle2 = false
+        //     }
+        //     midtoggle = false
+        // }
+    </script>
+</body>
+
+</html>

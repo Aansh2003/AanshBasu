@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> Fun Info </title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="fun_info_css.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    </head>
+</html>
+<body>
+    <div class="bg"></div>
+    <div class="star-field">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark nav_bg">
+        <a class="navbar-brand main_text" href="#">Zoomies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Browse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fun info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" onclick="document.getElementsByClassName('dropdown-menu')[0].style.display='block'" id="navbarDropdown" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        Register
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../login/login_client.html">Customer</a>
+                        <a class="dropdown-item" href="../login/login.html">Vendor</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="movedown">
+    <div class="heading"> Fun Features On The Website </div>
+    <div class="heading_1"> Planets on the Delivery Page</div>
+    <div class="subtext"> Majority of the planets made on the delivery page are customed designed by us. These planets were sketched
+        out and brought to life with vibrant colors on Adobe Illustrator. After several frustrating yet fulfilling design iterations, we
+        came up with the following names. We hope you appreciate this personal touch to the website. Disclaimer: It may be scientifically 
+        impossible for these planets to exist outside our imagination. 
+    </div>
+
+    <div class="grid_container">
+        <div class="grid_container_item">
+            <div class="image"> <img src="p1_v2.png"></div><br>
+            <div class="info"> <b class="info_bold">Name:</b> Pays De Bons <br> <b class="info_bold">ID:</b> P420 <br> <b class="info_bold">Native Species:</b> Unicorns <br> <b class="info_bold">Distance from Earth:</b> 66500 KM <br> <b class="info_bold">Status:</b> Sustaining life</div>
+        </div>
+        <div class="grid_container_item">
+            <div class="image"> <img src="p2.png" style="margin-top:10%"></div><br>
+            <div class="info"> <b class="info_bold">Name:</b> Zekrom <br> <b class="info_bold">ID:</b> P609 <br> <b class="info_bold">Native Species:</b> Zekroms (Duh) <br> <b class="info_bold">Distance from Earth:</b> 120000 KM <br> <b class="info_bold">Status:</b> Sustaining life</div>
+        </div>
+        <div class="grid_container_item">
+            <div class="image"> <img src="p3.png"></div><br>
+            <div class="info"> <b class="info_bold">Name:</b> Fuocoland <br> <b class="info_bold">ID:</b> P276 <br> <b class="info_bold">Native Species:</b> Glycogermi <br> <b class="info_bold">Distance from Earth:</b> 6500 KM <br> <b class="info_bold">Status:</b> Sustaining primitive life</div>
+        </div>
+        <div class="grid_container_item">
+            <div class="image"> <img src="alien.png" style="margin-top:10%"></div><br>
+            <div class="info"> <b class="info_bold">Name:</b> Mulk <br> <b class="info_bold">ID:</b> P165 <br> <b class="info_bold">Native Species:</b> Mulliens <br> <b class="info_bold">Distance from Earth:</b>far away <br> <b class="info_bold">Status:</b> Human Habitat</div>
+        </div>
+        <div class="grid_container_item">
+            <div class="image"> <img src="p1.png"></div><br>
+            <div class="info"> <b class="info_bold">Name:</b> Tragödie <br> <b class="info_bold">ID:</b> P089 <br> <b class="info_bold">Native Species:</b> Cookie Monsters <br> <b class="info_bold">Distance from Earth:</b> 12000 KM <br> <b class="info_bold">Status:</b> Swallowed by Blackhole</div>
+        </div>
+        <div class="grid_container_item">
+            <div class="image"> <img src="earth.png" style="height:80%; width:70%;margin-top:10%"></div><br>
+            <div class="info"> <b class="info_bold">Name:</b> Earth <br> <b class="info_bold">ID:</b> P001 <br> <b class="info_bold">Native Species:</b> Humans <br> <b class="info_bold">Distance from Earth:</b> 0 KM <br> <b class="info_bold">Status:</b> Native Habitat</div>
+        </div>
+    </div>
+
+    <div class="heading_1" style="margin-top: 5vh;"> NUKE EM'</div>
+    <div style="display: flex;justify-content: center; width: 100%;height: 60vh;padding-top: 5vh;"><img style='width: auto;height: 100%;' src="nuke.jpg"></div>
+    <div style="position: relative; top: 0%;color:white;font-family: 'Orbitron';padding: 5vw; text-align: center;">Tired of waiting for your delivery? Showcase your unhappiness by pressing the big red button and nuking a planet! ( For legal reasons we don't condone mass destruction of planets )</div>
+
+    <div class="heading_1" style="margin-top: 5vh;"> Animation here, animation there!</div>
+    <div style="display: flex;justify-content: center; width: 100%;height: 60vh;padding-top: 5vh;"><img style='width: auto;height: 100%;' src="button.png"></div>
+    <div style="position: relative; top: 0%;color:white;font-family: 'Orbitron';padding: 5vw; text-align: center;">Try pressing various buttons to see what they do! Lack of bugs not guaranteed =P</div>
+
+    
+    <div class="heading_1" style="margin-top: 5vh;"> Filtersss!</div>
+    <div style="display: flex;justify-content: center; width: 100%;height: 60vh;padding-top: 5vh;"><img style='width: auto;height: 100%;' src="Screenshot from 2024-01-28 21-14-57.png"></div>
+    <div style="position: relative; top: 0%;color:white;font-family: 'Orbitron';padding: 5vw; text-align: center;">Try out the filter by category feature! Helps you find your desired product faster and with ease!</div>
+
+    <div class="heading_1" style="margin-top: 5vh;"> Custom Icons!</div>
+    <div style="display: flex;justify-content: center; width: 100%;height: 60vh;padding-top: 5vh;"><img style='width: auto;height: 100%;' src="logo.png"></div>
+    <div style="position: relative; top: 0%;color:white;font-family: 'Orbitron';padding: 5vw; text-align: center;">Look at our custom designed company and website icon!!</div>
+    </div>
+
+</body>

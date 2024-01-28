@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main_page_css.css">
+    <!-- Zoomies font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <!-- Product description page font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <title> Space Zoomies </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark nav_bg">
+        <a class="navbar-brand main_text" href="#">Zoomies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Browse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fun info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" onclick="document.getElementsByClassName('dropdown-menu')[0].style.display='block'" id="navbarDropdown" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        Register
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="../login/login_client.html">Customer</a>
+                        <a class="dropdown-item" href="../login/login.html">Vendor</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div style="position: absolute;top:7%">
+        <div class="container">
+            <div class="bg"></div>
+            <div class="star-field ">
+                <div class="layer"></div>
+                <div class="layer"></div>
+                <div class="layer"></div>
+            </div>
+            <div class="black">
+                <div class="transparent title">
+                    ZOOMIES
+                </div>
+                <div class="sub">
+                    <div class="transparent subtitle">
+                        To infinity
+                    </div>
+                    <div class="transparent subtitle">
+                        and beyond
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="half-page" id="first">
+                <div class="subsection">
+                    <div class="left_border left_paragraph">Intergalactic travel can be tedious and tiresome. <br> We deliver everything under the sun and beyond...</div>
+                </div>
+            </div>
+            <div class="half-page" id="second">
+                <img src="astronaut_pizza.jpg" class = " img img1">
+                <img src="astronaut_charcuterie.jpg" class = " img img2">
+                <img src="astronaut_drink.jpg" class = " img img3">
+                <img src="astronaut_groceries.jpg" class = " img img4">
+                <div class="info center" onmouseover="hover()" onmouseleave="de_hover()"><button class="buy">Browse</button></div>
+            </div> -->
+        </div>
+        <div class="dark">
+            <div class="content" onmouseover="show(0);">
+                <div class="picture">
+                    <img class="cont-img" src="astronaut_charcuterie.jpg">
+                </div>
+                <div class="writing hidden">
+                    <div class="inner bord hidden">
+                        Our inspiration comes from a futuristic utopian society where humans have conquered vast portions of the universe. This society requires transportation of various items to support the universal economy and we aim to provide that service.<br> Click <a href="#">here</a> to read more about our inspiration!
+                    </div>
+                </div>
+                <div class="writing">
+                    <div class="header">Inspiration</div>
+                </div>
+            </div>
+            <div class="content" onmouseover="show(1);">
+                <div class="writing">
+                    <div class="header">Inspiration</div>
+                </div>
+                <div class="writing hidden">
+                    <div class="inner bord hidden">
+                        Our inspiration comes from a futuristic utopian society where humans have conquered vast portions of the universe. This society requires transportation of various items to support the universal economy and we aim to provide that service.<br> Click <a href="#">here</a> to read more about our inspiration!
+                    </div>
+                </div>
+                <div class="picture">
+                    <img class="cont-img" src="astronaut_shopping.jpg">
+                </div>
+            </div>
+            <div class="content" onmouseover="show(2);">
+                <div class="picture">
+                    <img class="cont-img" src="astronaut_groceries.jpg">
+                </div>
+                <div class="writing hidden">
+                    <div class="inner bord hidden">
+                        Our inspiration comes from a futuristic utopian society where humans have conquered vast portions of the universe. This society requires transportation of various items to support the universal economy and we aim to provide that service.<br> Click <a href="#">here</a> to read more about our inspiration!
+                    </div>
+                </div>
+                <div class="writing">
+                    <div class="header">Inspiration</div>
+                </div>
+            </div>
+            <div class="content" onmouseover="show(3);">
+                <div class="writing">
+                    <div class="header">Inspiration</div>
+                </div>
+                <div class="writing hidden">
+                    <div class="inner bord hidden">
+                        Our inspiration comes from a futuristic utopian society where humans have conquered vast portions of the universe. This society requires transportation of various items to support the universal economy and we aim to provide that service.<br> Click <a href="#">here</a> to read more about our inspiration!
+                    </div>
+                </div>
+                <div class="picture">
+                    <img class="cont-img" src="astronaut_pizza.jpg">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 
+            <div class="subsection">
+                <div class="main_text">Zoomies</div>
+            </div> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        // function hover() {
+        //     for (ele of document.getElementsByClassName('img')) {
+        //         ele.style.transform = 'scale(1.3)';
+        //         console.log('hi')
+        //     }
+        // }
+        // function de_hover() {
+        //     for (ele of document.getElementsByClassName('img')) {
+        //         ele.style.transform = 'scale(1)';
+        //         console.log('hi')
+        //     }
+        // }
+
+        // document.body.addEventListener("scroll",autoscroll());
+        function show(index){
+            var ele = document.getElementsByClassName('content')[index];
+            for(child of ele.children){
+                child.style.opacity = '100%';
+                for(inner of child.children){
+                    inner.style.opacity = '100%';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

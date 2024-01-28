@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .login-form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-form h2 {
+        margin-top: 0;
+    }
+
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .login-form button {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .login-form button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Registration form styles */
+    .registration-form {
+        display: none;
+    }
+
+    .show-registration .login-form {
+        display: none;
+    }
+
+    .show-registration .registration-form {
+        display: block;
+    }
+
+    /* Button Animation */
+    .toggle-button {
+        background-color: #28a745;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .toggle-button:hover {
+        background-color: #218838;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="login-form">
+        <h2>Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button id="toggleButton" onclick="toggleForm()">Go to Registration</button>
+    </div>
+    
+    <div class="registration-form">
+        <h2>Registration</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Confirm Password">
+        <button id="toggleButton" onclick="toggleForm()">Go to Login</button>
+    </div>
+</div>
+
+<script>
+    function toggleForm() {
+        var loginForm = document.querySelector('.login-form');
+        var registrationForm = document.querySelector('.registration-form');
+        var toggleButton = document.getElementById('toggleButton');
+
+        loginForm.classList.toggle('show-registration');
+        registrationForm.classList.toggle('show-registration');
+
+        if (toggleButton.innerText === 'Go to Registration') {
+            toggleButton.innerText = 'Go to Login';
+        } else {
+            toggleButton.innerText = 'Go to Registration';
+        }
+    }
+</script>
+
+</body>
+</html>

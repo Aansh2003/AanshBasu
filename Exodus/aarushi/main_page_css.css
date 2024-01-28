@@ -359,35 +359,6 @@ nav{
     box-shadow: #1C4259 0px 14px 28px, #1C4259 0px 10px 10px;
 } */
 
-
-.bg_nav {
-    background-color: #0A0B1F;
-  }
-  
-  .navbar{
-    position: absolute;
-    height: 7%;
-    font-size: 2vh;
-    font-family: 'Dosis', serif;;
-  }
-  .navbar-nav .nav-item.dropdown:hover .dropdown-menu, .navbar-nav .nav-item.dropdown .dropdown-menu:hover {
-  display: block;
-  }
-  
-  .dropdown-menu{
-    display: none;
-  }
-
-  #navbarDropdown:hover .dropdown-menu{
-    display: block;
-  }
-
-  .nav_bg {
-  background-color: #171631;
-  margin: 0;
-  width: 110%;
-}
-
 .bg_nav {
   background-color: #0A0B1F;
 }
@@ -402,24 +373,48 @@ nav{
 display: block;
 }
 
-
 .dropdown-menu{
   display: none;
 }
 
-.dropdown-item{
-  font-size: 1.5vh;
+#navbarDropdown:hover .dropdown-menu{
+  display: block;
+}
+
+.nav_bg {
+background-color: #171631;
+margin: 0;
+width: 110%;
+}
+
+.bg_nav {
+background-color: #0A0B1F;
+}
+
+.navbar{
+position: absolute;
+height: 7%;
+font-size: 3vh;
+font-family: 'Dosis', serif;;
+}
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu, .navbar-nav .nav-item.dropdown .dropdown-menu:hover {
+display: block;
+}
+
+
+.dropdown-menu{
+display: none;
 }
 
 #navbarDropdown:hover .dropdown-menu{
-  display: block
+display: block
 }
 
 .main_text{
-    font-family: 'Calistoga', serif;
+  font-family: 'Calistoga', serif;
 }
 
 
 .dropdown-menu:hover{
-    display: block;
-  }
+  display: block;
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Browse </title>
+    <link rel="stylesheet" href="browse_css.css">
+    <!-- Zoomies font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <!-- Product description page font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="star-field">
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark nav_bg">
+        <a class="navbar-brand main_text" href="#">Zoomies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Browse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Fun info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-haspopup="true"
+                        aria-expanded="false">
+                        Register
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Customer</a>
+                        <a class="dropdown-item" href="#">Vendor</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="heading"> Browse By category</div>
+    <div class="container blur">
+        <div class="grid_top">
+            <div class="grid_top_item" onclick="sort('cloth')">
+                <img class="img_top" src="futuristic_dress.png">
+                <div class="text_top">Clothing</div>
+            </div>
+            <div class="grid_top_item" onclick="sort('earth')">
+                <img class="img_top" src="fruit.png">
+                <div class="text_top">Earthly Groceries</div>
+            </div>
+            <div class="grid_top_item" onclick="sort('ent')">
+                <img class="img_top" src="toy.png">
+                <div class="text_top">Entertaiment</div>
+            </div>
+            <div class="grid_top_item" onclick="sort('furn')">
+                <img class="img_top" src="furniture.png">
+                <div class="text_top">Furniture</div>
+            </div>
+            <div class="grid_top_item" onclick="sort('car')">
+                <img class="img_top" src="rocket.png">
+                <div class="text_top">Vehicle</div>
+            </div>
+        </div>
+    </div>
+    <div class="grid_container">
+        <div class="grid_container_item blur earth">
+            <div class="info">Quartz</div>
+            <div class="tinyimage"><img class="image" src="quartz.png "></div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="star_text">(80)</span>
+            <div class="info">Rare pink colored Quartz, mined on planet P122...</div>
+            <div class="info"> 𐊾 50000</div>
+        </div>
+        <div class="grid_container_item blur cloth">
+            <div class="info">Puffer Extreme Outfit</div>
+            <div class="tinyimage"><img class="image" src="futuristic_dress.png"></div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+            <span class="star_text">(10)</span>
+            <div class="info"> Exquisite yalk wool fabric dyed with dragon shark blood...</div>
+            <div class="info"> 𐊾 990000</div>
+        </div>
+        <div class="grid_container_item blur cloth">
+            <div class="info">Minimalistic Puffer</div>
+            <div class="tinyimage"><img class="image" src="puffer.png"></div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="star_text">(75)</span>
+            <div class="info">Pair this sleek black puffer sleeved winter jacket with...</div>
+            <div class="info">𐊾 6000</div>
+        </div>
+        <div class="grid_container_item blur cloth">
+            <div class="info">Spacesuit</div>
+            <div class="tinyimage"><img class="image" src="spacesuit.png"></div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="star_text">(25)</span>
+            <div class="info">An absolute essential if you travel through space for any duration...</div>
+            <div class="info">𐊾 76000</div>
+        </div>
+        <div class="grid_container_item blur earth">
+            <div class="info">Honey Stars</div>
+            <div class="tinyimage"><img class="image" src="cereal.png"></div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="star_text">(42)</span>
+            <div class="info">Nestle's honey stars, contains nutrients...</div>
+            <div class="info"> 𐊾 1750</div>
+        </div>
+        <div class="grid_container_item blur earth">
+            <div class="info"> Space Twinkies</div>
+            <div class="tinyimage"><img class="image" src="twinkies.png"></div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="star_text">(99)</span>
+            <div class="info">American, charcoal snack cake with creamy filling, distributed by Hostess Brands...</div>
+            <div class="info"> 𐊾 500</div>
+        </div>
+        <div class="grid_container_item blur earth" onclick='window.open("../product/fruit_basket_product.html")'>
+            <div class="info">Fruit Basket</div>
+            <div class="tinyimage"><img class="image" src="fruit.png"></div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="star_text">(99)</span>
+            <div class="info">Enjoy fresh fruit delicacies, Contains: 2 oranges, 1 apple, 1 pineapple, 2 bananas...
+            </div>
+            <div class="info"> 𐊾 3000</div>
+        </div>
+        <div class="grid_container_item blur earth" onclick='window.open("../product/vegetable_basket_product.html")'>
+            <div class="info">Vegetable Basket</div>
+            <div class="tinyimage"><img class="image" src="vegetable.png"></div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="star_text">(44)</span>
+            <div class="info">Enjoy fresh vegetables from the farmhouses of Earth, Contains: 1 broccoli, 3 tomatoes...
+            </div>
+            <div class="info"> 𐊾 5000</div>
+        </div>
+        <div class="grid_container_item blur earth earth">
+            <div class="info"> <span style="font-weight: bold">(Pandemic Essential)</span> Toilet Paper</div>
+            <div class="tinyimage"><img class="image" src="toiletpaper.png"></div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="star_text">(83)</span>
+            <div class="info">3 Rolls of toilet paper, 4 ply, white, pandemic essential, suitable for bathrooms and...
+            </div>
+            <div class="info"> 𐊾 1500</div>
+        </div>
+        <div class="grid_container_item blur ent">
+            <div class="info">NERF Space Shooter</div>
+            <div class="tinyimage"><img class="image" src="toy.png"></div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star "></span>
+            <span class="star_text">(63)</span>
+            <div class="info">NERF's special space edition rubber bullet shooter toy, suitable for children of ages...
+            </div>
+            <div class="info"> 𐊾 7000</div>
+        </div>
+        <div class="grid_container_item blur furn">
+            <div class="info">La-Z-Boy Sofa</div>
+            <div class="tinyimage"><img class="image" src="furniture.png"></div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="star_text">(59)</span>
+            <div class="info">s a Luxurious modern design Handcrafted Sofa, handcrafted...</div>
+            <div class="info"> 𐊾 500000</div>
+        </div>
+
+        <div class="grid_container_item blur furn">
+            <div class="info">Dining Set</div>
+            <div class="tinyimage"><img class="image" src="dining.png"></div>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star "></span>
+            <span class="star_text">(14)</span>
+            <div class="info">Sturdy polished tan wooden dining set with 4 chairs and satin cushions for your..</div>
+            <div class="info"> 𐊾 240000</div>
+        </div>
+        <div class="grid_container_item blur car">
+            <div class="info">Conestoga II</div>
+            <div class="tinyimage"><img class="image" src="rocket.png"></div>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star "></span>
+            <span class="fa fa-star "></span>
+            <span class="star_text">(0)</span>
+            <div class="info">Intergalactic Travel Vehicle, powered by liquid hydrogen, suitable for...</div>
+            <div class="info"> 𐊾 100000000</div>
+        </div>
+    </div>
+    <script>
+        prev = '';
+        function isClass(list, className) {
+            for (ele of list) {
+                if (ele == className)
+                    return true;
+            }
+            return false;
+        }
+
+        function sort(className) {
+
+            var children = document.getElementsByClassName('grid_container')[0].children;
+            if (className == prev) {
+                for (child of children) {
+                    child.classList.remove('hider');
+                }
+                className = '';
+            }
+            else {
+                for (child of children) {
+                    if (!isClass(child.classList, className)) {
+                        child.classList.add('hider');
+                    }
+                    else {
+                        child.classList.remove('hider');
+                    }
+                }
+            }
+
+            prev = className;
+        }
+    </script>
+</body>
+
+</html>
